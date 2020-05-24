@@ -22,7 +22,7 @@ The repository is currently compatible with `tensorflow-2.0` and makes use of th
 * If you want to train this model, use:  
 
 ```bash
-python emotions.py --mode train
+python emotion.py --mode train
 ```
 
 * If you want to view the predictions without training again, you can download the pre-trained model from [here](https://drive.google.com/file/d/1FUn0XNOzf-nQV7QjbBPA6-8GLoHNNgv-/view?usp=sharing) and then run:  
