@@ -4,13 +4,13 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-from keras.models import Sequential
-from keras.layers import Dense,Dropout,Activation,Flatten
-from keras.layers import Conv2D,MaxPool2D,BatchNormalization
-from keras.losses import categorical_crossentropy
-from keras.optimizers import Adam
-from keras.regularizers import l2
-from keras.utils import np_utils
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense,Dropout,Activation,Flatten
+from tensorflow.keras.layers import Conv2D,MaxPool2D,BatchNormalization
+from tensorflow.keras.losses import categorical_crossentropy
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.regularizers import l2
+from tensorflow.keras.utils import to_categorical
 
 df = pd.read_csv('fer2013.csv')
 # print(df.head())
@@ -42,8 +42,8 @@ X_test = np.array(X_test,'float32')
 Y_train = np.array(Y_train,'float32')
 Y_test = np.array(Y_test,'float32')
 
-Y_train = np_utils.to_categorical(Y_train,num_classes=num_labels)
-Y_test = np_utils.to_categorical(Y_test,num_classes=num_labels)
+Y_train = to_categorical(Y_train,num_classes=num_labels)
+Y_test = to_categorical(Y_test,num_classes=num_labels)
 
 # Noarmalizing Data between 0 and 1
 
