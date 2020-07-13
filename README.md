@@ -16,7 +16,7 @@ This project aims to classify the emotion on a person's face into one of **seven
 The repository is currently compatible with `tensorflow-2.0` and makes use of the Keras API using the `tensorflow.keras` library.
 
 
-* Download the FER-2013 dataset from [here](https://drive.google.com/file/d/1X60B-uR3NtqPd4oosdotpbDgy8KOfUdr/view?usp=sharing) and unzip it inside the `src` folder.
+* Download the FER-2013 dataset from [here](https://drive.google.com/file/d/18rQxzx2jyUzisuqFq9XHmhFxUkAf1Lu9/view?usp=sharing) and unzip it inside the `src` folder.
 
 * If you want to train this model, use:  
 
